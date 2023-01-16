@@ -1,3 +1,4 @@
+#suck my cock daniel
 #include <stdio.h>
 
 int selection (char input) {
@@ -22,13 +23,5 @@ int selection (char input) {
 int main () {
     char input = selection(input);
 
-    return 0;
-}
-int khoaisugly(){
-    char cock;
-    if (cock) {
-        printf("Bin ugliest");
-    }
-    
     return 0;
 }
