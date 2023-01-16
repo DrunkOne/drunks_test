@@ -26,5 +26,9 @@ int main () {
 }
 int khoaisugly(){
     char cock;
-    if cock;
+    if (cock) {
+        printf("Bin ugliest");
+    }
+    
+    return 0;
 }
