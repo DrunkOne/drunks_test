@@ -1,3 +1,4 @@
+#suck my cock daniel
 #include <stdio.h>
 
 int selection (char input) {
