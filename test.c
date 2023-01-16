@@ -1,15 +1,17 @@
 //suck my cock daniel
 #include <stdio.h>
-#define SIZE 10
+#include <string.h>
+#define SIZE 100
 
 char password[SIZE];
+int error = 0;
 
 void selection_menu () {
     char selection;
     printf("How to create a program? \n");
     do {
         printf("Choose one of the two options: A or B: ");
-        scanf("%c", selection);
+        error += scanf("%c", selection);
         if( selection == 'A' || selection == 'B') {
             printf("Lmao sonnnn I don't have an idea at all on how to program anything... \n");
             break;
@@ -22,30 +24,31 @@ void selection_menu () {
     } while (1);
 }
 
-int assign_password () {
+char assign_password () {
     printf("Enter dick length: ");
-    scanf(" %[^\n]s", password);
+    error += scanf(" %[^\n]s", password);
     return password;
 }
 
 void change_password () {
     printf("Enter new password: ");
-    scanf(" %[^\n]s", password);
+    error += scanf(" %[^\n]s", password);
 }
 
 
 int main () {
-    printf("Your password is %s \n", assign_password);
+    printf("Your password is %s \n", assign_password());
     printf("You want to change your password? (Y/N): ");
     int input;
-    scanf("%c", input);
+    error += scanf("%c", input);
     if (input == 'Y' || input == 'y') {
-        change_password(); 
+        change_password();
+        printf("Success!");
     } else if (input == 'N' || input == 'n') {
         printf("Creating 1000 instances of Bonzi buddy...");
     } else {
         printf("You fucking muppet");
-        selection();
+        selection_menu();
     }
     return 0;
 }
