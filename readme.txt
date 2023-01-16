@@ -1,3 +1,3 @@
-Khoa aint contributing
+Khoa is contributing
 
 nuke his hosue
