@@ -24,3 +24,7 @@ int main () {
 
     return 0;
 }
+int khoaisugly(){
+    char cock;
+    if cock;
+}
